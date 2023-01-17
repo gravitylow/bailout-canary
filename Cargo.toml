@@ -1,0 +1,22 @@
+[package]
+name = "bailout-canary"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1"
+serde_json = "1.0"
+log = "0.4"
+simple_logger = "4.0.0"
+again = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+uuid = { version = "1.2.2", features = ["v4", "fast-rng"] }
+tokio = { version = "1", features = ["full"] }
+tungstenite = { version = "0.18.0", features = ["native-tls"] }
+openssl = { version = "0.10", features = ["vendored"] }
+lambda_runtime = "0.4"
+sha256 = "1.1.1"
+url = "2.3.1"
+pkg-config = "0.3.26"
